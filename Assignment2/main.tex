@@ -41,7 +41,26 @@ Authors: Mona Scheurenbrand, Mattes Warning, and Sarah Hüwels
 \end{large}	\\ [2mm]
 
 
-Your answer here!
+The fraction of occupied receptor binding sides is given by $\frac{[RL]}{[RL]+ [R]}$. We are interested in $\frac{[RL]}{[RL]+ [R]} = 0.5$. For this to hold we require $[RL] = [R] = R_C$.
+\begin{proof}
+We have:
+\begin{align*}
+\frac{[RL]}{[RL]+ [R]} &= \frac{1}{2} \\
+         \frac{1}{1 +\frac{[R]}{[RL]}} &= \frac{1}{2}  \\
+         1 +\frac{[R]}{[RL]} &= 2  \\
+         \frac{[R]}{[RL]} &= 1  \\
+         [R] &= [RL]  = R_C\\
+\end{align*}
+\end{proof}
+\begin{proof}
+Now we can use this in Equation 1:
+\begin{align*}
+K_D& = \frac{[R][L]}{[RL]} \\
+K_D &= \frac{[R_C][L]}{[R_C]} \\
+         K_D &= [L]
+\end{align*}
+$K_D$ is the (free) ligand concentration required to occupy 50\% of the receptor binding sites.
+\end{proof}
 
 
 \begin{large}
@@ -50,7 +69,7 @@ Your answer here!
 \end{large}	\\ [2mm]
 
 
-PDB_IDs: 1IJR, 2PL0, 3B2W, 3BYS, 3BYU \\
+PDB IDs: 1IJR, 2PL0, 3B2W, 3BYS, 3BYU \\
 Refer to A2.3.ipynb for implementation details
 
 \bibliographystyle{plain}
