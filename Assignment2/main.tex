@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 
 \usepackage{chin-report}
+\usepackage{amsmath, amsthm}
 
 \begin{document}
 \input{header}
@@ -41,7 +42,7 @@ Authors: Mona Scheurenbrand, Mattes Warning, and Sarah Hüwels
 \end{large}	\\ [2mm]
 
 
-The fraction of occupied receptor binding sides is given by $\frac{[RL]}{[RL]+ [R]}$. We are interested in $\frac{[RL]}{[RL]+ [R]} = 0.5$. For this to hold we require $[RL] = [R] = R_C$.
+The fraction of occupied receptor binding sides is given by $\frac{[RL]}{[RL]+ [R]}$. We are interested in $\frac{[RL]}{[RL]+ [R]} = 0.5$. For this to hold we require $[RL] = [R] = [R_C]$.
 \begin{proof}
 We have:
 \begin{align*}
@@ -49,11 +50,11 @@ We have:
          \frac{1}{1 +\frac{[R]}{[RL]}} &= \frac{1}{2}  \\
          1 +\frac{[R]}{[RL]} &= 2  \\
          \frac{[R]}{[RL]} &= 1  \\
-         [R] &= [RL]  = R_C\\
+         [R] &= [RL]  = [R_C]\\
 \end{align*}
 \end{proof}
 \begin{proof}
-Now we can use this in Equation 1:
+Now we can use this in Equation 1, substituting $[RL] = [R] = [R_C]$:
 \begin{align*}
 K_D& = \frac{[R][L]}{[RL]} \\
 K_D &= \frac{[R_C][L]}{[R_C]} \\
