@@ -1,0 +1,87 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{subcaption} 
+
+\usepackage{chin-report}
+
+\begin{document}
+\input{header}
+
+\begin{huge}
+	\vspace{1cm}
+	\textbf{Assignment Sheet 2}
+\end{huge} \\
+
+Authors: Sarah Hüwels, Mattes Warning, Mona Scheurenbrand
+
+\begin{large}
+	\vspace{1.0cm}
+	\textbf{A.2.1: Prodrugs}
+\end{large}	\\ [2mm]
+%\textit{(Optional) Not processed by: NAME(S)} \\
+
+\textbf{1. [2 pt] What are prodrugs?}
+
+Prodrugs are inactive compounds that become active after ingestion through enzymatic biotransformation. They must be hydrophobic enough to cross membranes but also sufficiently hydrophilic for solubility, bioavailability, and transport. Prodrugs are categorized as either carrier-linked or bioprecursors. \cite{ABET2017810}
+
+
+\textbf{2. [2 pt] You already met medicines in the ’history’ lecture whose ’quintessence’ is a prodrug. Please give their names.}
+
+Sulfonamides such as Sulfachrysoidin are prodrugs as they are metabolized to Sulfanilamide which can replace p-aminobenzoic acid.
+
+Salicin is hydrolyzed to Salicylic alcohol and further oxidized to Salicylic acid. Similarly, Acetylsalicylic acid is a prodrug that gets converted to Salicylic acid. 
+
+Heroin, which is a 3,6-diacetylester of morphine, is metabolized into morphine.
+
+\textbf{3. [1 pt] One of these prodrugs belongs to a very versatile group of drugs and its active form can be considered a prototype of this group (hint: it contains sulfur). Which group is this?}
+
+Sulfonamides with the active form Sulfanilamide.
+
+\textbf{4. [1 pt] Please give the major indication(s) (lecture example) for drugs out of this group.}
+
+Sulfonamides are used as reactive dyes and for treating bacterial infections.
+
+\textbf{5. [1 pt] Briefly describe the mechanism of action of these drugs for their original indication.}
+
+Sulfonamides are metabolized into sulfanilamide, a structural analog of p-aminobenzoic acid (PABA). By mimicking PABA, sulfanilamide competitively inhibits the enzyme dihydropteroate synthetase, which is crucial for bacterial folate synthesis and, consequently, DNA replication. \cite{sulfonamide}
+
+\textbf{6. [1 pt] Why does this mechanism of action not lead to severe side-eﬀects in humans?}
+
+This mechanism does not cause severe side effects in humans because humans do not synthesize folate but obtain it from their diet. Therefore, the enzyme dihydropteroate synthetase is absent in human cells. This selective targeting of a bacterial-specific pathway allows sulfonamides to kill or inhibit bacteria without significantly affecting human cells. \cite{Dihydropteroatesynthase}
+
+\newpage
+\begin{large}
+	\vspace{1.0cm}
+	\textbf{A.2.2: Receptor-Ligand Interactions}
+\end{large}	\\ [2mm]
+
+Fractional occupancy = $\frac{RL}{RL + R}$ 
+
+with R = free binding sites, RL = occupied binding sites, and RL + R = total binding sites. \cite{receptor}
+
+From the dissociation constant $K_D$ we can derive $RL$:
+
+$K_D = \frac{[R][L]}{[RL]} \Longrightarrow RL = \frac{[R][L]}{K_D}$
+
+And use it here:
+
+Fractional occupancy = $\frac{\frac{[R][L]}{K_D}}{\frac{[R][L]}{K_D} + [R]} = \frac{[R]\frac{[L]}{K_D}}{[R](\frac{[L]}{K_D} + 1)} = \frac{\frac{[L]}{K_D}}{\frac{[L]}{K_D} + 1} = \frac{[L]}{[L] + K_D}$ 
+
+Set fractional occupancy to 0.5:
+
+$0.5 = \frac{[L]}{[L] + K_D}$
+
+$0.5([L] + K_D) = [L]$
+
+$0.5[L] + 0.5 K_D = [L]$
+
+$0.5 K_D = 0.5[L]$
+
+$K_D = [L]$
+
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
