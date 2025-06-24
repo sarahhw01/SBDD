@@ -1,0 +1,43 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{chin-report}
+\usepackage{amsmath, amsthm}
+
+\begin{document}
+\input{header}
+
+\begin{huge}
+	\vspace{1cm}
+	\textbf{Assignment Sheet 7}
+\end{huge} \\
+
+Authors: Mona Scheurenbrand, Mattes Warning, and Sarah Hüwels
+
+
+\begin{large}
+	\vspace{1.0cm}
+	\textbf{A.7.1: Gradient Calculation}
+\end{large}	\\ [2mm]
+\textbf{Calculation of the gradient of the following function:} \\
+$f(x,y,z) = \sqrt{x^2 + y^2 + z^2} = (x^2 + y^2 + z^2)^\frac{1}{2}$ \\
+\\
+$\frac{\partial f}{\partial x} = \frac{1}{2}(x^2 + y^2 + z^2)^{-1/2} \cdot 2x = \frac{x}{\sqrt{x^2 + y^2 + z^2}}$ \\
+$\frac{\partial f}{\partial y} = \frac{1}{2}(x^2 + y^2 + z^2)^{-1/2} \cdot 2y = \frac{y}{\sqrt{x^2 + y^2 + z^2}}$ \\
+$\frac{\partial f}{\partial z} = \frac{1}{2}(x^2 + y^2 + z^2)^{-1/2} \cdot 2z = \frac{z}{\sqrt{x^2 + y^2 + z^2}}$ \\ 
+\\
+$\nabla f(x,y,z) = (\frac{x}{\sqrt{x^2 + y^2 + z^2}}, \frac{y}{\sqrt{x^2 + y^2 + z^2}}, \frac{z}{\sqrt{x^2 + y^2 + z^2}})$ \\
+\\
+\textbf{Calculation of the gradient of the distance $r_{ij}$:} \\
+$r_{ij} = |r_i-r_j| = \sqrt{(x_i-x_j)^2 + (y_i-y_j)^2 + (z_i-z_j)^2} = \sqrt{(r_i-r_j)^2}$ \\
+since $r_i = (x_i,y_i,z_i)$ and $r_j = (x_j,y_j,z_j)$ \\
+\\ 
+$\nabla_{r_i}r_{ij} = \frac{1}{2} \cdot \frac{1}{\sqrt{(r_i-r_j)^2}} \cdot 2 \cdot (2_i - r_j) = \frac{r_i - r_j}{\sqrt{(r_i-r_j)^2}} = \frac{r_i - r_j}{|r_i - r_j|} = \frac{r_i - r_j}{r_{ij}}$ \\
+\\
+\textbf{Geometric Point of View:} \\ 
+The gradient of the length $r_{ij} = |r_i - r_j|$ with respect to $r_i$ is a unit vector pointing from $r_j$ to $r_i$. So in  other words, it is the normalized direction vector from atom j to atom i. \\
+\\
+\textbf{Calculate the gradient of the full harmonic stretch term with respect to atom position $r_i$:} \\ 
+$E(r_i, r_j) = k_s \times (r_{ij} - r_0)^2$ \\
+Use the chain rule to solve this: \\
+$\nabla_{r_i} E(r_i, r_j) = 2 \cdot k_s (r_{ij} - r_0) \cdot \nabla_{r_i}r_{ij} = 2 \cdot k_s (r_{ij} - r_0) \cdot \frac{r_i - r_j}{r_{ij}}$
+\end{document}
