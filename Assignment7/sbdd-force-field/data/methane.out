@@ -1,0 +1,21 @@
+Loaded 1 molecule from ../data/methane.sdf.
+======================================
+  == Processing molecule: 297,-OEChem-11181413013D,
+  Bonds
+    CH: 1.092199 A (0.001644 kcal/mol)
+    CH: 1.092168 A (0.001598 kcal/mol)
+    CH: 1.092212 A (0.001663 kcal/mol)
+    CH: 1.092228 A (0.001688 kcal/mol)
+  Angles
+    HCH: 1.910694 radians (0.061563 kcal/mol)
+    HCH: 1.910594 radians (0.061277 kcal/mol)
+    HCH: 1.910586 radians (0.061256 kcal/mol)
+    HCH: 1.910653 radians (0.061445 kcal/mol)
+    HCH: 1.910642 radians (0.061415 kcal/mol)
+    HCH: 1.910630 radians (0.061379 kcal/mol)
+  == Bond count: 4
+  == Angle count: 6
+  == stretch energy: 0.006593 kcal/mol
+  == bend energy:    0.368335 kcal/mol
+  == total energy:   0.374929 kcal/mol
+======================================
